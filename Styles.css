@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "roboto-font";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-family: "roboto-font" , sans-serif;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(235, 18%, 26%);
+  
+}
+
+.container {
+  height: max-content;
+  border-radius: 20px;
+}
+
+.right-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+.right-side .details {
+  position: relative;
+  height: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.details h1 {
+  color: hsl(235, 18%, 26%);
+  width: 100%;
+  text-align: justify;
+  font-size: 35px;
+}
+.details p {
+  color: #000000e1;
+  font-weight: lighter;
+}
+.details p:not(:first-of-type) {
+  right: 0;
+  width: 80%;
+}
+.details p span {
+  position: absolute;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+}
+
+#get-email-address {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  padding: 0 0 10px 0;
+}
+.email-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.email-section label {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.error {
+  border: 1px solid #ff6257;
+  background: #ee0f0f38;
+}
+.email-error::after {
+  content: "Valid email required";
+  color: #ff6257;
+  font-size: smaller;
+  font-weight: bold;
+}
+.email-section input {
+  padding: 10px 5px;
+  margin: 2px 0;
+  box-shadow: #00000005 0px 1px 3px 0px, #1b1f2326 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+.sub-btn {
+  width: 100%;
+  padding: 10px 5px;
+  background: hsl(234, 29%, 20%);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sub-btn:hover {
+  background: #ff6257;
+  transition: all 0.4s;
+}
+::placeholder {
+  color: #9294a0;
+}
+
+/*index1*/
+
+/*index2*/
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 40px;
+}
+.container2 p:not(.thanks) {
+  width: 100%;
+  margin: 15px 0;
+}
+.my-mail {
+  color: #000;
+  font-weight: bold;
+}
+.tick-icon {
+  width: 100%;
+}
+.thanks {
+  color: hsl(234, 29%, 20%);
+  width: 100%;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 35px;
+}
